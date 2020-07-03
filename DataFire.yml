@@ -15,6 +15,15 @@ tasks:
       array: data.featured_tags
       input:
         gifId: 0
+  task1:
+    schedule: cron(5 8 ? * 0)
+    action: pivotaltracker/tokens.active.get
+    accounts: {}
+    monitor:
+      action: pivotaltracker/tokens.active.get
+      accounts: {}
+      trackBy: ''
+      array: ''
 paths:
   /paths0:
     get:
