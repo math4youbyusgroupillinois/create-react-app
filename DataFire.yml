@@ -39,3 +39,6 @@ tests:
     accounts: {}
     input:
       gifId: 0
+  test1:
+    action: pivotaltracker/tokens.active.get
+    accounts: {}
