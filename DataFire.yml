@@ -2,3 +2,15 @@ options:
   cors: true
 actions:
   action: ./actions/action.js
+tasks:
+  task:
+    schedule: cron(5 8 ? * 0)
+    action: giphy/getGifById
+    accounts: {}
+    monitor:
+      action: giphy/getGifById
+      accounts: {}
+      trackBy: id
+      array: data.featured_tags
+      input:
+        gifId: 0
