@@ -14,3 +14,8 @@ tasks:
       array: data.featured_tags
       input:
         gifId: 0
+paths:
+  /paths0:
+    get:
+      action: giphy/getGifById
+      accounts: {}
