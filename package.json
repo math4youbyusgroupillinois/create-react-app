@@ -51,5 +51,10 @@
     "yarn.lock": [
       "git rm --cached"
     ]
-  }
+  },
+  "dependencies": {
+    "@datafire/giphy": "5.0.0"
+  },
+  "name": "wordbuybigmouthpublications",
+  "version": "1.0.0"
 }
