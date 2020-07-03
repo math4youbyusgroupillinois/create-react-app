@@ -29,6 +29,10 @@ paths:
     get:
       action: giphy/getGifById
       accounts: {}
+  /paths1:
+    get:
+      action: pivotaltracker/tokens.active.get
+      accounts: {}
 tests:
   test:
     action: giphy/getGifById
